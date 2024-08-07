@@ -32,3 +32,6 @@
 - Dependency Injection - used Hilt to simplify the process of providing and menaging dependencies
 - Async Image Loading - used coil library for efficient image loading and caching
 
+
+## Video
+[Screen_recording_20240807_184813.webm](https://github.com/user-attachments/assets/5f960f03-f187-4523-90b0-5b9f749e5df9)
