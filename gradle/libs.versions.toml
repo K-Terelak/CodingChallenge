@@ -1,0 +1,116 @@
+[versions]
+activityCompose = "1.9.0"
+agp = "8.4.2"
+appcompat = "1.6.1"
+compose = "1.7.0-beta01"
+composeBom = "2024.05.00"
+coreKtx = "1.10.1"
+hilt = "2.49"
+ktor = "2.3.7"
+coil = "3.0.0-alpha07"
+hilt-navigation-compose = "1.2.0"
+javax-inject = "1"
+junitVersion = "1.1.5"
+kotlin = "2.0.0"
+kotlinx-coroutines = "1.8.1"
+kotlin-reflect = "1.9.23"
+ksp = "2.0.0-1.0.21"
+ktlint-plugin = "12.1.1"
+lifecycleRuntimeKtx = "2.6.1"
+material = "1.10.0"
+material3 = "1.2.1"
+navigation = "2.8.0-alpha08"
+serialization-gradle-plugin = "2.0.0"
+cc-plugin = "1.0.0"
+timber = "5.0.1"
+serialization = "1.6.3"
+realm = "2.0.0"
+
+
+# configurations
+compileSdk = "android-34"
+minSdk = "26"
+targetSdk = "34"
+testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+versionCode = "1"
+versionName = "1.0"
+
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "compose" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+dagger-hiltLib = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+dagger-hiltProc = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+javax-inject = { group = "javax.inject", name = "javax.inject", version.ref = "javax-inject" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin-reflect" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+coil-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil" }
+ktor-client-auth = { group = "io.ktor", name = "ktor-client-auth", version.ref = "ktor" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-serialization = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+realm-base = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
+realm-sync = { module = "io.realm.kotlin:library-sync", version.ref = "realm" }
+
+
+# build logic dependencies
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+compose-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-power-assert-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-power-assert", version.ref = "kotlin" }
+dagger-hilt-GradlePlugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
+kotlinx-serialization-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "serialization-gradle-plugin" }
+ksp-gradlePlugin = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+ktlint-gradlePlugin = { module = "org.jlleitschuh.gradle:ktlint-gradle", version.ref = "ktlint-plugin" }
+realm-gradlePlugin = { module = "io.realm.kotlin:gradle-plugin", version.ref = "realm" }
+
+[plugins]
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint-plugin" }
+cc-android-application = { id = "com.example.codingchallenge.android.application", version.ref = "cc-plugin" }
+cc-android-library = { id = "com.example.codingchallenge.android.library", version.ref = "cc-plugin" }
+cc-compose = { id = "com.example.codingchallenge.compose", version.ref = "cc-plugin" }
+cc-hilt = { id = "com.example.codingchallenge.hilt", version.ref = "cc-plugin" }
+cc-realm = { id = "com.example.codingchallenge.realm", version.ref = "cc-plugin" }
+cc-serialization = { id = "com.example.codingchallenge.serialization", version.ref = "cc-plugin" }
+cc-kotlin-library = { id = "com.example.codingchallenge.kotlin.library", version.ref = "cc-plugin" }
+
+[bundles]
+core = [
+    'androidx-core-ktx', 'androidx-lifecycle-runtime-ktx', 'androidx-appcompat', 'material'
+]
+compose = [
+    'androidx-ui',
+    'androidx-ui-graphics',
+    'androidx-activity-compose',
+    'androidx-navigation-compose',
+    'androidx-hilt-navigation-compose',
+    'androidx-foundation',
+    'androidx-material',
+    'androidx-material3',
+]
+ktor = [
+    'ktor-client-auth', 'ktor-client-core', 'ktor-client-logging', 'ktor-client-negotiation',
+    'ktor-client-okhttp', 'ktor-serialization'
+]

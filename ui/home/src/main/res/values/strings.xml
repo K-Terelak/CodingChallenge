@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_list">Empty list</string>
+    <string name="syncing">Syncing</string>
+    <string name="content_description_sync_icon">Sync icon</string>
+    <string name="open_itunes">Open iTunes</string>
+    <string name="click_here_to_refresh">Click here to refresh</string>
+
+    <string name="please_wait_until_sync_completes">Please wait until sync completes</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="album_details">Album details</string>
+</resources>
