@@ -20,6 +20,7 @@ class AndroidBasePlugin : Plugin<Project> {
                 apply("kotlin-android")
                 apply(CompilerPlugin::class)
                 apply(StaticCodeAnalysisPlugin::class)
+                apply(TestingPlugin::class)
             }
 
             dependencies {

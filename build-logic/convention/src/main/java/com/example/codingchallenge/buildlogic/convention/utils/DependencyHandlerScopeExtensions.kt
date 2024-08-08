@@ -41,3 +41,13 @@ internal fun DependencyHandlerScope.bundleImplementation(dependency: Provider<Ex
  * @see [DependencyHandler.add]
  */
 internal fun DependencyHandlerScope.ksp(dependency: Provider<MinimalExternalModuleDependency>): Dependency? = add("ksp", dependency)
+
+/**
+ * Adds a dependency to the 'testImplementation' configuration.
+ *
+ * @param dependencyNotation notation for the dependency to be added.
+ * @return The dependency.
+ *
+ * @see [DependencyHandler.add]
+ */
+internal fun DependencyHandlerScope.testImplementation(dependencyNotation: Any): Dependency? = add("testImplementation", dependencyNotation)

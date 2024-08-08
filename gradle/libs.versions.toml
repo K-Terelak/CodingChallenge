@@ -25,6 +25,9 @@ cc-plugin = "1.0.0"
 timber = "5.0.1"
 serialization = "1.6.3"
 realm = "2.0.0"
+junit = "5.10.2"
+mockk = "1.13.11"
+turbine = "1.1.0"
 
 
 # configurations
@@ -73,6 +76,11 @@ ktor-serialization = { group = "io.ktor", name = "ktor-serialization-kotlinx-jso
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 realm-base = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
 realm-sync = { module = "io.realm.kotlin:library-sync", version.ref = "realm" }
+junit = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+junit-runtime = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+junit-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junit" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 
 
 # build logic dependencies

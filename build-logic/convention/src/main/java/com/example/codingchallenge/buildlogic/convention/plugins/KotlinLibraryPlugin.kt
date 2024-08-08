@@ -15,6 +15,7 @@ class KotlinLibraryPlugin : Plugin<Project> {
                 apply("kotlin")
                 apply(CompilerPlugin::class)
                 apply(StaticCodeAnalysisPlugin::class)
+                apply(TestingPlugin::class)
             }
 
             dependencies {
