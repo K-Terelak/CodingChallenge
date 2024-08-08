@@ -11,6 +11,7 @@
 - Coil
 - Material3
 - Kotlinx-serialization
+- Ktlint
 
 ## Features:
 - HomeScreen
@@ -22,16 +23,18 @@
   - Tapping on each cell pushes another screen onto the navigation stack (AlbumDetailsScreen)
  # 
 - AlbumDetailsScreen
-    -  Displays detailed information about a selected album such as: `thumbnal/name/artist/copyright/genres/releaseDate` in format `dd.MM.yyyy`.
+    -  Displays detailed information about a selected album such as: `thumbnal/name/artist/copyright/genres' and 'releaseDate` in format `dd.MM.yyyy`.
+    -  Includes TopAppBar with title and navigation icon
     -  Includes a button that redirects to an external URL.
 
 ## Decisions
 - Multi-Module Architecture - the app is structured into multiple modules to enchance scalability and maintainability
 - Offline-first Approach - ensuring the app is fully functional without an internet connection. Data is initially loaded from the local database
 - Data Synchronization - using Ktor for making network requests to fetch the latest data from the api
-- Dependency Injection - used Hilt to simplify the process of providing and menaging dependencies
-- Async Image Loading - used coil library for efficient image loading and caching
-
+- Dependency Injection - using Hilt to simplify the process of providing and menaging dependencies
+- Async Image Loading - using coil library for efficient image loading and caching
+- Ktlint - ensuring consistent code style and formatting across the codebase
+- User Interface - utilizes Jetpack Compose for UI components. The app uses the default theme provided by Material3
 
 ## Video
 [Screen_recording_20240807_184813.webm](https://github.com/user-attachments/assets/5f960f03-f187-4523-90b0-5b9f749e5df9)
