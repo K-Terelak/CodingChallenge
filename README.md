@@ -12,6 +12,9 @@
 - Material3
 - Kotlinx-serialization
 - Ktlint
+- Turbine
+- Mockk
+- Junit
 
 ## Features:
 - HomeScreen
