@@ -1,6 +1,11 @@
 package com.example.codingchallenge.home.home
 
 import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -48,9 +53,16 @@ private fun HomeScreenContent(modifier: Modifier = Modifier, state: HomeViewStat
     ) {
         SyncingComponent(isSyncing = state.isSyncing)
 
-        AnimatedContent(targetState = state, label = "Sync error") {
-            if (it.errorMessage != null && it.albums.isEmpty()) {
-                SyncErrorComponent(errorMessage = it.errorMessage, onViewAction = onViewAction)
+        AnimatedContent(
+            targetState = state,
+            label = "Sync error",
+            transitionSpec = {
+                slideInVertically(animationSpec = tween()) togetherWith
+                    slideOutVertically(animationSpec = tween())
+            }
+        ) {
+            if (it.errorMessage != null) {
+                SyncErrorComponent(modifier = Modifier.animateContentSize(), errorMessage = it.errorMessage, onViewAction = onViewAction)
             }
         }
 
