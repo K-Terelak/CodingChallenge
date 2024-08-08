@@ -78,7 +78,7 @@ private fun HomeScreenContent(modifier: Modifier = Modifier, state: HomeViewStat
                 verticalArrangement = Arrangement.spacedBy(MaterialTheme.spacing.space8),
                 horizontalArrangement = Arrangement.spacedBy(MaterialTheme.spacing.space8)
             ) {
-                items(state.albums) { album ->
+                items(state.albums, key = { it.id }) { album ->
                     AlbumItem(
                         album = album,
                         isSyncing = state.isSyncing,
